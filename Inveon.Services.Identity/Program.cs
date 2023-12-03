@@ -33,9 +33,12 @@ var builderProvider = builder.Services.AddIdentityServer(options =>
 .AddInMemoryApiScopes(SD.ApiScopes)
 .AddInMemoryClients(SD.Clients)
 .AddAspNetIdentity<ApplicationUser>();
+
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
+
 builderProvider.AddDeveloperSigningCredential();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

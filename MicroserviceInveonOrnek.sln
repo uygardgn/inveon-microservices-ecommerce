@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inveon.Services.ProductAPI"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inveon.Services.ShoppingCartAPI", "Inveon.Services.ShoppingCartAPI\Inveon.Services.ShoppingCartAPI.csproj", "{C6C7F691-FF71-4A99-A8F9-6478DBE8CDF1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inveon.Services.OrderAPI", "Inveon.Services.OrderAPI\Inveon.Services.OrderAPI.csproj", "{95D960D1-A0F6-46C1-BCC2-F74CAAA7F826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{C6C7F691-FF71-4A99-A8F9-6478DBE8CDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6C7F691-FF71-4A99-A8F9-6478DBE8CDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6C7F691-FF71-4A99-A8F9-6478DBE8CDF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95D960D1-A0F6-46C1-BCC2-F74CAAA7F826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95D960D1-A0F6-46C1-BCC2-F74CAAA7F826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95D960D1-A0F6-46C1-BCC2-F74CAAA7F826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95D960D1-A0F6-46C1-BCC2-F74CAAA7F826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{2F9FA6C6-C5D8-4635-9029-96BDFD4F72EF} = {B87F62AF-5B78-4563-B53F-D1C2FC7A1AE2}
 		{C2C2328B-CD0A-4135-AEBB-44A121BE01E9} = {B87F62AF-5B78-4563-B53F-D1C2FC7A1AE2}
 		{C6C7F691-FF71-4A99-A8F9-6478DBE8CDF1} = {B87F62AF-5B78-4563-B53F-D1C2FC7A1AE2}
+		{95D960D1-A0F6-46C1-BCC2-F74CAAA7F826} = {B87F62AF-5B78-4563-B53F-D1C2FC7A1AE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {828E0C15-C3B6-46FA-87F4-61B8E7714250}

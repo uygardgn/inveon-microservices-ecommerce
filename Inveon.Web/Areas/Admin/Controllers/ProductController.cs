@@ -42,8 +42,6 @@ namespace Inveon.Web.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ProductCreate(ProductViewModel model)
         {
-            //if (ModelState.IsValid)
-            //  {
             string yuklenenResimAdi = ResimYukle(model);
             var accessToken = await HttpContext.GetTokenAsync("access_token");
 
@@ -63,7 +61,6 @@ namespace Inveon.Web.Areas.Admin.Controllers
             {
                 return RedirectToAction(nameof(ProductIndex));
             }
-            //}
             return View(model);
         }
 
@@ -95,7 +92,6 @@ namespace Inveon.Web.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ProductEdit(ProductViewModel model)
         {
-
 
             var accessToken = await HttpContext.GetTokenAsync("access_token");
             var guncellencekUrun = await _productService.GetProductByIdAsync<ResponseDto>(model.ProductId, accessToken);
@@ -129,7 +125,6 @@ namespace Inveon.Web.Areas.Admin.Controllers
 
             return View(model);
         }
-
 
 
         [Authorize(Roles = "Admin")]
@@ -174,14 +169,10 @@ namespace Inveon.Web.Areas.Admin.Controllers
                 string filePath = Path.Combine(dosyaninYuklenecegiKlasorYolu, dosyaAdi);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    //seçilen resim ilgili klasörü ilgili ismi ile birlikte oluşturulur
                     model.ProductPicture.CopyTo(fileStream);
                 }
-
             }
             return dosyaAdi;
         }
-
-
     }
 }

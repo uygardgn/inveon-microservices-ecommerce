@@ -3,9 +3,9 @@ using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace Inveon.Services.ShoppingCartAPI.RabbitMQSender
+namespace Inveon.Services.OrderAPI.RabbitMQSender
 {
-    public class RabbitMQCartMessageSender : IRabbitMQCartMessageSender
+    public class RabbitMQOrderMessageSender : IRabbitMQOrderMessageSender
     {
         private readonly string _hostname;
         private readonly int _port;
@@ -13,7 +13,7 @@ namespace Inveon.Services.ShoppingCartAPI.RabbitMQSender
         private readonly string _username;
         private IConnection _connection;
 
-        public RabbitMQCartMessageSender()
+        public RabbitMQOrderMessageSender()
         {
             _hostname = "localhost";
             _port = 5672;
